@@ -6,10 +6,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import FriendsScreen from './loginCat';
 
+
 const Stack = createStackNavigator();
+
+
 
 class indexCatburger extends React.Component {
   render() {
+    
     return (
       
       <View style={styles.container}>

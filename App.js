@@ -9,6 +9,7 @@ import donaciones from './donacionesCat';
 import registro from './registroCat';
 import indexLibreria from './libreriaCat/indexLibros';
 import editoriales from './libreriaCat/editoriales';
+import { Provider } from 'react-redux';
 
 const Stack = createStackNavigator();
 class App extends React.Component {
@@ -44,6 +45,8 @@ class App extends React.Component {
         </Stack.Navigator>
       </NavigationContainer>
     );
+    
+  registerServiceWorker()
   }
 }
 

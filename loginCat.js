@@ -1,7 +1,6 @@
 import React, { useState, useEffect, setState } from 'react';
 import { Text, View, StyleSheet, Image, Button, Alert, TouchableOpacity, Touchable, ScrollView, Platform, SafeAreaView, TextInput } from 'react-native';
 import logoCat from './assets/icon.png';
-import conexion from './Conectividad/ConexionOracle'
 import { createServer } from "miragejs"
 
 
@@ -23,30 +22,10 @@ import { createServer } from "miragejs"
             },
         })
 
-var conjuntoDatos = [
-  {  id: 0, mail: "jaramillo.nicole@gmail.com", pass: 202030 },
-  { id: 1, mail: "lerolero@hotmail.com", pass: 2021 },
-  { id: 2, mail: "Dunkirk", pass: 2030 }]
 
 var mailIngresado, passIngresada = ""
 var existeCorreo = false
 var validado = false
-
-function validaDatos(usuario, pass){
-  existeCorreo = false
-  validado = false
-
-  usuarito.map((id) => {
-    if(id.mail == usuario){
-      existeCorreo = true
-      if(id.pass == pass){
-        validado = true
-      }
-    }
-  })
-
-  return validado
-}
 
 class loginCat extends React.Component {
   
